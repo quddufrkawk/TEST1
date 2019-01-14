@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="kr">
+	<head>
+	<meta charset="UTF-8">
+    <title>http://www.blueb.co.kr</title>
+    
+ <link rel="stylesheet" type="text/css" href="loginpage.css" />
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="loginpage.js"></script>
+
+
+
+<style rel="stylesheet">
+
+</style>
+</head>
+<body>
+                <div class='ribbon'>
+                    <a href='#'><span>메인 메뉴</span></a>
+                    <a href='#'><span>공지사항</span></a>
+                    <a href='#'><span>게시판</span></a>
+                    <a href='#'><span>회원 정보</span></a>
+                    <a href='#'><span>회원 가입</span></a>
+                </div>
+
+<section class="container">
+		    <article class="half">
+			        <h1>Azure</h1>
+			        <div class="tabs">
+				            <span class="tab signin active"><a href="#signin">로그인</a></span>
+				            <span class="tab signup"><a href="#signup">회원 가입</a></span>
+			        </div>
+			        <div class="content">
+				            <div class="signin-cont cont">
+					                <form action="#" method="post" enctype="multipart/form-data">
+						                    <input type="email" name="email" id="email" class="inpt" required="required" placeholder="Email or ID">
+						                    <label for="email">ID</label>
+						                    <input type="password" name="password" id="password" class="inpt" required="required" placeholder="Password">
+                						    <label for="password">PASSWORD</label>
+						                    <input type="checkbox" id="remember" class="checkbox">
+						                    <label id="checkbox" for="remember">자동 로그인</label>
+						                    <div class="submit-wrap">
+							                        <input type="submit" value="Sign in" class="submit">
+							                        <a href="#" class="more">비밀번호를 잊어버렸습니까?</a>
+						                    </div>
+        					        </form>
+    				        </div>
+    				        <div class="signup-cont cont">
+                <form action="#" method="post" enctype="multipart/form-data">
+						                    <input type="email" name="email" id="name" class="inpt" required="required" placeholder="Your name">
+						                    <label for="name">Your name</label>
+                    <input type="email" name="email" id="email" class="inpt" required="required" placeholder="Your email">
+						                    <label for="email">Your email</label>
+						                    <input type="password" name="password" id="password" class="inpt" required="required" placeholder="Your password">
+                						    <label for="password">Your password</label>
+						                    <div class="submit-wrap">
+							                        <input type="submit" value="Sign up" class="submit">
+							                        <a href="#" class="more">Terms and conditions</a>
+						                    </div>
+        					        </form>
+            </div>
+			        </div>
+		    </article>
+		    <div class="half bg"></div>
+	</section>
+	
+	<script>
+		$(document).ready(function(){
+			$('.checkbox').click(function()
+			{
+				if('.checkbox'!=checked)
+				{
+
+				}
+				else
+				{
+					alert("브라우저를 닫더라도 로그인이 계속 유지될 수 있습니다 \n\n 로그인 유지 기능을 사용할 경우 다음 로그아웃 전 까지는 로그인이 유지됩니다 \n\n 단, PC방, 학교, 도서관 등 공공장소에서 이용 시 개인정보가 유출될 가능성이 있으니 꼭 로그아웃을 해주세요.");
+				}
+			
+			});
+
+		});
+	</script>
+</body>
+</html>
